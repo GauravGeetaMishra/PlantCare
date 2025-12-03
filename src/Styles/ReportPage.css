@@ -1,0 +1,123 @@
+/* ---------- PAGE WRAPPER ---------- */
+.page {
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- PAGE HEADER ---------- */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.page-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0d7a39;
+}
+
+/* ---------- FORM CARD ---------- */
+.form-card {
+  background: #eaffe9;
+  border: 1px solid #b8e7c4;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0, 120, 60, 0.15);
+}
+
+.inline-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.inline-form input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #a4d9af;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.inline-form input:focus {
+  outline: none;
+  border-color: #0d7a39;
+  box-shadow: 0 0 4px rgba(0, 120, 60, 0.3);
+}
+
+/* ---------- BUTTONS ---------- */
+.btn-primary {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #0fa54a, #0c7d37);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0c7d37, #0fa54a);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  padding: 7px 14px;
+  background: #e3ffe9;
+  border: 1px solid #9fdfaf;
+  border-radius: 6px;
+  color: #0c6a33;
+  transition: 0.25s;
+}
+
+.btn-secondary:hover {
+  background: #cdfad7;
+  border-color: #0c7c44;
+}
+
+.btn-danger {
+  padding: 6px 10px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background: #c0392b;
+}
+
+/* ---------- REPORT CARD GRID ---------- */
+.card-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #d4f3df;
+  box-shadow: 0 2px 6px rgba(0, 120, 60, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card.list-item span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0b4f2a;
+}
+
+.muted {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}

@@ -1,0 +1,102 @@
+:root{
+   --bg:#f6fff4;
+   --primary:#23a655;
+   --secondary:#144d24;
+   --text:#1f1f1f;
+   --card:#ffffff;
+   --radius:12px;
+   --shadow:0px 8px 24px rgba(0,0,0,0.08);
+}
+
+body{
+   margin:0;
+   background:var(--bg);
+   font-family:"Inter", sans-serif;
+   color:var(--text);
+   overflow-x:hidden;
+}
+
+/************ LAYOUT ************/
+.layout{
+   display:flex;
+   min-height:100vh;
+}
+
+/************ SIDEBAR ************/
+.sidebar{
+   width:250px;
+   background:var(--secondary);
+   color:white;
+   padding-top:30px;
+   display:flex;
+   flex-direction:column;
+   gap:14px;
+}
+.sidebar a{
+   color:white;
+   text-decoration:none;
+   font-size:18px;
+   padding:12px 20px;
+   border-radius:8px;
+   transition:0.3s;
+}
+.sidebar a:hover{
+   background:rgba(255,255,255,0.1);
+}
+
+/************ HEADER ************/
+.header{
+   height:55px;
+   background:white;
+   display:flex;
+   align-items:center;
+   justify-content:space-between;
+   padding:0 25px;
+   box-shadow:var(--shadow);
+   position:sticky;
+   top:0;
+   z-index:10;
+}
+.header .title{
+   font-size:22px;
+   font-weight:700;
+   color:var(--primary);
+}
+
+/************ CARDS ************/
+.card{
+   background:var(--card);
+   box-shadow:var(--shadow);
+   padding:22px;
+   border-radius:var(--radius);
+   margin-bottom:22px;
+}
+
+/************ GRID ************/
+.grid{
+   display:grid;
+   gap:22px;
+   grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+}
+
+/************ FOOTER ************/
+.footer{
+   text-align:center;
+   padding:14px 0;
+   background:white;
+   box-shadow:0 -4px 15px rgba(0,0,0,0.06);
+   font-weight:600;
+}
+
+/************ RESPONSIVE ************/
+@media(max-width:900px){
+   .sidebar{
+      position:fixed;
+      height:100vh;
+      transform:translateX(-100%);
+      transition:0.4s;
+   }
+   .sidebar.open{
+      transform:translateX(0);
+   }
+}

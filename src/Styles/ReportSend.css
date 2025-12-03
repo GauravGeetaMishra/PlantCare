@@ -1,0 +1,93 @@
+.report-container {
+  background: #fff;
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.report-container h2 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.report-container .muted {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.report-container hr {
+  margin: 22px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.report-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+
+.report-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  font-size: 15px;
+}
+
+.report-item span,
+.report-item strong {
+  flex: 1;
+}
+
+/* 🔥 Buttons */
+.btn-green,
+.btn-delete,
+.btn-email {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Add as report button */
+.btn-green {
+  background: #2ecc71;
+  color: white;
+}
+.btn-green:hover {
+  background: #25a45a;
+}
+
+/* Delete report button */
+.btn-delete {
+  background: #e74c3c;
+  color: white;
+  margin-left: 8px;
+}
+.btn-delete:hover {
+  background: #c0392b;
+}
+
+/* Send email button */
+.btn-email {
+  width: 100%;
+  text-align: center;
+  background: #3498db;
+  color: white;
+  margin-top: 10px;
+  padding: 12px 16px;
+}
+.btn-email:hover {
+  background: #247fc2;
+}

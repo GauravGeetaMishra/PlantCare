@@ -1,0 +1,34 @@
+.carousel-item img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 14px 20px;
+  border-radius: 6px;
+}
+
+.carousel-caption h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #ffffff;
+}
+
+.carousel-indicators .active {
+  background-color: #4caf50;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  transition: 0.4s;
+}

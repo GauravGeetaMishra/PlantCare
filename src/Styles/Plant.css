@@ -1,0 +1,158 @@
+.page {
+  max-width: 70vw;
+  margin: auto;
+  padding: 30px 18px;
+  font-family: "Poppins", sans-serif;
+  color: #1f3d26;
+}
+
+/* ---- HEADER ---- */
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #206a3b;
+}
+
+.page-header p {
+  font-size: 16px;
+  color: #5d7a69;
+}
+
+/* ---- FORM CARD ---- */
+.form-card {
+  background: #e9f7ec;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 45px;
+}
+
+.form-card h2 {
+  margin-bottom: 18px;
+  color: #206a3b;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-card input,
+.form-card textarea {
+  border: 2px solid #b9dbbf;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+  border-color: #1fa75a;
+}
+
+.form-card button {
+  background: #1fa75a;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.form-card button:hover {
+  background: #168648;
+}
+
+/* ---- PLANT LIST ---- */
+.plant-list h2 {
+  margin-bottom: 15px;
+  color: #206a3b;
+}
+
+/* grid */
+.grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+}
+
+/* ---- CARD ---- */
+.plant-card {
+  background: #f8fff9;
+  border: 2px solid #c8e8cf;
+  border-radius: 14px;
+  padding: 20px;
+  transition: 0.25s;
+}
+
+.plant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
+}
+
+.plant-card h3 {
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: #14582f;
+}
+
+.muted {
+  color: #5e7d6b;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.notes {
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: #2b5036;
+}
+
+/* ---- CARD ACTIONS ---- */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 10px;
+  background: #1fa75a;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.actions button:hover {
+  background: #15743f;
+}
+
+.actions .danger {
+  background: #dd3c2b;
+}
+
+.actions .danger:hover {
+  background: #b02b20;
+}
+
+/* ---- EMPTY MESSAGE ---- */
+.plant-list p.muted {
+  text-align: center;
+  font-size: 17px;
+}

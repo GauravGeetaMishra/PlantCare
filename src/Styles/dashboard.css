@@ -1,0 +1,181 @@
+/* ================= PAGE BASE ================== */
+.page.dashboard {
+  max-width: 70vw;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+/* Titles */
+.page-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #1f5f09;
+  margin-bottom: 0.3rem;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #4b5d49;
+}
+
+/* ================= SLIDER ================== */
+.carousel {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.carousel img {
+  height: 380px;
+  object-fit: cover;
+}
+
+/* ================= SUMMARY CARDS ================== */
+.card {
+  border-radius: 18px !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ================= DASHBOARD GRID LINKS ================== */
+.card-grid {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+.card-grid .card {
+  padding: 28px;
+  text-align: center;
+  background: #f9fff7;
+  border: 1px solid #d9f3d9;
+}
+.card-grid h3 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.card-grid p {
+  margin-bottom: 18px;
+  color: #5a6859;
+}
+
+/* Quick links buttons */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.btn-primary {
+  background: #1f5f09;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #144205;
+}
+
+.btn-secondary {
+  background: #4b830d;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background: #355b08;
+}
+
+/* Admin */
+.admin-card {
+  border: 2px solid #4b830d;
+}
+
+/* ================= RECENT ACTIVITY CARD ================== */
+.list-group-item {
+  font-size: 1rem;
+  padding: 15px 18px;
+}
+
+/* ================= PLANTS SECTION ================== */
+.section-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #1f5f09;
+}
+
+/* Add Plant form */
+.dashboard-form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: #1f5f09;
+}
+
+.dashboard-form input,
+.dashboard-form textarea {
+  width: 100%;
+  border: 1px solid #cfdac8;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.25s ease;
+}
+
+.dashboard-form input:focus,
+.dashboard-form textarea:focus {
+  outline: none;
+  border: 1.4px solid #4b830d;
+  box-shadow: 0 0 0 2px rgba(75, 131, 13, 0.25);
+}
+
+.dashboard-form textarea {
+  height: 90px;
+  resize: none;
+}
+
+/* Plant cards */
+.plant-item-card {
+  background: #f7fff4;
+  border: 1px solid #d6eccc !important;
+  border-radius: 14px;
+  transition: 0.25s;
+}
+.plant-item-card h4 {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+.plant-item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.13);
+}
+
+/* Delete button */
+.btn-danger {
+  background: #b00020 !important;
+  border: none !important;
+}
+.btn-danger:hover {
+  background: #7d0016 !important;
+}
+
+/* ================= RESPONSIVE ================== */
+@media (max-width: 992px) {
+  .carousel img {
+    height: 260px;
+  }
+}
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.9rem;
+  }
+  .section-title {
+    font-size: 1.55rem;
+  }
+  .dashboard-form {
+    margin-bottom: 35px;
+  }
+}

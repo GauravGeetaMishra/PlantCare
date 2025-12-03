@@ -1,0 +1,40 @@
+footer {
+   
+  width: 100%;
+  padding: 18px 0;
+
+  /* SAME TO SAME as Navbar */
+  background: linear-gradient(135deg, #dfffe3, #b9f5c8, #d7ffd8);
+
+  color: #0a4f26;
+  text-align: center;
+  margin-top: auto;
+
+  border-top: 1px solid rgba(0, 120, 60, 0.15);
+  box-shadow: 0 -2px 10px rgba(0, 120, 60, 0.12);
+
+  font-family: 'Poppins', sans-serif;
+}
+
+footer p {
+  margin: 3px 0;
+}
+
+footer p:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+footer p:last-child {
+  font-size: 14px;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+/* hover effect (same style vibe) */
+footer:hover {
+  background: linear-gradient(135deg, #e8ffee, #c6f7d1, #e0ffe4);
+  transition: 0.3s ease;
+}
+
