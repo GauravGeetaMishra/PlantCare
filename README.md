@@ -1,16 +1,57 @@
-# React + Vite
+PlantCare
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PlantCare is a full-stack web application built with React and Spring Boot that allows users to upload plant images and receive simple care suggestions using the Gemini API. The app provides features for managing plants and ensures secure authentication using JWT.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Upload plant images and generate care suggestions via Gemini API
 
-## React Compiler
+Add, view, and delete plant entries
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Secure login and authentication with JWT
 
-## Expanding the ESLint configuration
+Clean and responsive frontend built with React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+RESTful backend built using Spring Boot and MySQL
+
+Tech Stack
+
+Frontend: React, Axios
+Backend: Spring Boot, Spring Security (JWT), Hibernate/JPA
+Database: MySQL
+API Integration: Gemini API
+
+How It Works
+
+User uploads a plant image
+
+The image is processed and sent to the Gemini API
+
+The API returns plant care suggestions
+
+Suggestions are displayed in the UI and can be saved along with plant data
+
+Project Structure
+
+Frontend:
+/src/components – React components
+/api – API calls
+/pages – UI pages
+
+Backend:
+/controllers – REST controllers
+/services – Business logic
+/repositories – JPA repositories
+/entities – Database models
+/config – Security and JWT configuration
+
+Installation
+Backend
+cd backend
+mvn clean install
+mvn spring-boot:run
+
+Frontend
+cd frontend
+npm install
+npm start
